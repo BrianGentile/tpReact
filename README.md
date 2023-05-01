@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Compte-rendu TP React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Auteurs: Gentile Brian & Gombert Gwenael
 
-## Available Scripts
 
-In the project directory, you can run:
+## 1. Setup du projet
 
-### `npm start`
+### Requirements:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+nodeJs(version utilisée: 16.19.1)
+npm(version utilisée: 8.19.3)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+L'application doit sûrement pouvoir se lancer avec une version plus récente mais si jamais cela ne fonctionne pas, utilisez la version que nous avons utilisé.
+Vous pouvez pour cela utilisé nvm sous Linux ou nvm-windows sous Windows qui est disponible sur github: https://github.com/coreybutler/nvm-windows
 
-### `npm test`
+### Lancement du projet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cloner le projet puis mettez vous dans ce dernier.
 
-### `npm run build`
+```bash
+$ git clone https://github.com/BrianGentile/tpReact.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+$ cd tpReact
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lancer ensuite cette commande:
+```bash
+$ npm install
+```
+puis lancer le projet:
+```bash
+$ npm run start
+```
+L'application est accessible depuis un navigateur à l'adresse "localhost:3000"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 2. Fonctionnement de l'application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Vous avez 2 champs de saisie: l'un pour ajouter une bière et l'autre pour en enlever une.
+Faites attention à ne pas faire de faute de frappe quand vous voulez enlever car il faut le nom exact de la bière.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+exemple:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+On ajoute 3 bières:
+![](images/addBeers.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+On en enlève une:
+![](images/removeBeer.png)
