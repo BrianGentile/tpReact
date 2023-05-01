@@ -43,7 +43,9 @@ Faites attention à ne pas faire de faute de frappe quand vous voulez enlever ca
 exemple:
 
 On ajoute 3 bières:
+
 ![](images/addBeers.png)
 
 On en enlève une:
+
 ![](images/removeBeer.png)
